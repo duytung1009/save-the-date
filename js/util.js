@@ -201,9 +201,9 @@ export const util = (() => {
         countDownDate();
         opacity('welcome', 0.025);
 
-        // Disable auto play
-        // audio.play();
+        // Enable/Disable auto play
         audio.showButton();
+        audio.play();
 
         theme.check();
         theme.showButtonChangeTheme();
