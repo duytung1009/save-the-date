@@ -2,7 +2,6 @@ import { card } from './card.js';
 import { util } from './util.js';
 import { theme } from './theme.js';
 import { storage } from './storage.js';
-import { pagination } from './pagination.js';
 import { request, HTTP_GET, HTTP_POST, HTTP_DELETE, HTTP_PUT } from './request.js';
 
 export const comment = (() => {
