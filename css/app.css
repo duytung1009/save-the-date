@@ -179,3 +179,34 @@ svg {
     transform: scale(1);
   }
 }
+
+.card-qr {
+  margin: 100px auto;
+  width: 620px;
+  height: 874px;
+  /* background: linear-gradient(45deg, #dcf6ff, #ffdce4); */
+  background: url('/assets/images/gallery/slider-2/QBX02441.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 0 40px 40px #fff6f8 inset;
+}
+
+.section-name {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: #212529;
+}
+
+.section-qrcode {
+  margin-bottom: 30px;
+  width: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+}

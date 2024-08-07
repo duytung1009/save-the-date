@@ -4,7 +4,6 @@ import { theme } from './theme.js';
 import { storage } from './storage.js';
 import { confetti } from './confetti.js';
 import { bootstrap } from './bootstrap.js';
-import { request, HTTP_GET } from './request.js';
 
 export const util = (() => {
 
