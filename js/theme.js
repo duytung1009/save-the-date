@@ -9,7 +9,7 @@ export const theme = (() => {
     const theme = storage('theme');
 
     const onLight = () => {
-        const elements = document.querySelectorAll('.text-light, .btn-theme-light, .bg-dark, .bg-black, .bg-theme-dark, .color-theme-black, .btn-outline-light');
+        const elements = document.querySelectorAll('.text-light, .btn-theme-light, .bg-dark, .bg-black, .bg-theme-dark, .color-theme-black, .btn-outline-light, .shadow-theme-black');
         elements.forEach((element) => {
             if (element.classList.contains('text-light')) {
                 element.classList.remove('text-light');
@@ -45,11 +45,16 @@ export const theme = (() => {
                 element.classList.remove('btn-outline-light');
                 element.classList.add('btn-outline-dark');
             }
+
+            if (element.classList.contains('shadow-theme-black')) {
+                element.classList.remove('shadow-theme-black');
+                element.classList.add('shadow-theme-white');
+            }
         });
     };
 
     const onDark = () => {
-        const elements = document.querySelectorAll('.text-dark, .btn-theme-dark, .bg-light, .bg-white, .bg-theme-light, .color-theme-white, .btn-outline-dark');
+        const elements = document.querySelectorAll('.text-dark, .btn-theme-dark, .bg-light, .bg-white, .bg-theme-light, .color-theme-white, .btn-outline-dark, .shadow-theme-white');
         elements.forEach((element) => {
             if (element.classList.contains('text-dark')) {
                 element.classList.remove('text-dark');
@@ -84,6 +89,11 @@ export const theme = (() => {
             if (element.classList.contains('btn-outline-dark')) {
                 element.classList.remove('btn-outline-dark');
                 element.classList.add('btn-outline-light');
+            }
+
+            if (element.classList.contains('shadow-theme-white')) {
+                element.classList.remove('shadow-theme-white');
+                element.classList.add('shadow-theme-black');
             }
         });
     };

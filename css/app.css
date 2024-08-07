@@ -149,6 +149,14 @@ footer {
   color: black;
 }
 
+.shadow-theme-white {
+  box-shadow: inset 0 0 8px 8px white, inset 0 0 3px 2px white;
+}
+
+.shadow-theme-black {
+  box-shadow: inset 0 0 8px 8px black, inset 0 0 3px 2px black;
+}
+
 svg {
   color: #ff8fab;
 }
@@ -178,6 +186,22 @@ svg {
   100% {
     transform: scale(1);
   }
+}
+
+.countdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #dcf6ff, #ffdce4);
+  transform: translate3d(0, 0, 0);
+}
+
+.countdown {
+  flex: 1;
+  background: linear-gradient(45deg, #dcf6ff, #ffdce4);
+  color: #212529 !important;
 }
 
 .card-qr {
