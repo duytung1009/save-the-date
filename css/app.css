@@ -234,3 +234,72 @@ svg {
   border-radius: 16px;
   overflow: hidden;
 }
+
+.card-qr-main {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-qr-main__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-white .card-qr-main__wrapper__item {
+  border-radius: 16px;
+  background-color: var(--bs-gray-100);
+  max-width: 300px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    border-radius: 16px;
+  }
+
+  /* span {
+    color: black;
+  } */
+}
+
+.bg-black .card-qr-main__wrapper__item {
+  border-radius: 16px;
+  background-color: var(--bs-gray-800);
+  max-width: 300px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    border-radius: 16px;
+  }
+
+  /* span {
+    color: black;
+  } */
+}
+
+.card-qr-main__frame {
+  padding: 20px 50px;
+  background: url('https://duytung1009.github.io/save-the-date/assets/images/clipart_flower_2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right
+}
+
+@media screen and (width <= 767px) {
+  .card-qr-main__wrapper {
+    flex-direction: column;
+  }
+}
